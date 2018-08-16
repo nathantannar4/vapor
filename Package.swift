@@ -26,7 +26,7 @@ let package = Package(
         .package(url: "https://github.com/vapor/multipart.git", from: "3.0.0"),
 
         // 🚍 High-performance trie-node router.
-        .package(url: "https://github.com/nathantannar4/routing.git", from: "3.0.0"),
+        .package(url: "https://github.com/nathantannar4/routing.git", from: "3.0.2"),
 
         // 📦 Dependency injection / inversion of control framework.
         .package(url: "https://github.com/vapor/service.git", from: "1.0.0"),
