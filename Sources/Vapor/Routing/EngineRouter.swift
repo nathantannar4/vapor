@@ -20,10 +20,13 @@ public final class EngineRouter: Router {
     ///
     /// - parameters:
     ///     - caseInsensitive: If `true`, route matching will be case-insensitive.
-    public init(caseInsensitive: Bool) {
+    public init(caseInsensitive: Bool, mountPath: PathComponent...) {
         self.router = .init()
         if caseInsensitive {
             self.router.options.insert(.caseInsensitive)
+        }
+        if !mountPath.isEmpty {
+            self.router.options.insert(.mount(mountPath))
         }
     }
 
